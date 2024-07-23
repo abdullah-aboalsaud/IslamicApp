@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.islamicapp.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash"
+        >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.islamicapp.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/radioFragment"
+        android:name="com.example.islamicapp.ui.radio.RadioFragment"
+        android:label="fragment_radio"
+        tools:layout="@layout/fragment_radio" />
+    <fragment
+        android:id="@+id/hadethFragment"
+        android:name="com.example.islamicapp.ui.hadeth.HadethFragment"
+        android:label="fragment_hadeth"
+        tools:layout="@layout/fragment_hadeth" />
+    <fragment
+        android:id="@+id/tasbehFragment"
+        android:name="com.example.islamicapp.ui.tasbeh.TasbehFragment"
+        android:label="fragment_tasbeh"
+        tools:layout="@layout/fragment_tasbeh" />
+    <fragment
+        android:id="@+id/quranFragment"
+        android:name="com.example.islamicapp.ui.quran.QuranFragment"
+        android:label="fragment_quran"
+        tools:layout="@layout/fragment_quran" />
+</navigation>
