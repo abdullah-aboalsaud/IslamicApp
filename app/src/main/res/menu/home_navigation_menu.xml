@@ -7,7 +7,7 @@
         android:title="Radio" />
     <item
         android:id="@+id/tasbehFragment"
-        android:icon="@drawable/ic_quran"
+        android:icon="@drawable/ic_sebha"
         android:title="Sebha" />
     <item
         android:id="@+id/hadethFragment"

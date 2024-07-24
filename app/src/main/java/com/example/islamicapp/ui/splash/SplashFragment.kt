@@ -37,7 +37,7 @@ class SplashFragment : Fragment() {
     }
 
     private fun startHomeFragment() {
-        findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+        findNavController().navigate(R.id.action_splashFragment_to_quranFragment)
     }
 
 

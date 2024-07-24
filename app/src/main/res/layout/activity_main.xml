@@ -65,9 +65,7 @@
             android:layout_gravity="bottom"
             />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

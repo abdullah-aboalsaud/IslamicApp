@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/quranFragment">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -12,10 +12,9 @@
         tools:layout="@layout/fragment_splash"
         >
         <action
-            android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/nav_graph"
-            app:popUpToInclusive="false" />
+            android:id="@+id/action_splashFragment_to_quranFragment"
+            app:destination="@id/quranFragment"
+            app:popUpTo="@id/nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -41,5 +40,21 @@
         android:id="@+id/quranFragment"
         android:name="com.example.islamicapp.ui.quran.QuranFragment"
         android:label="fragment_quran"
-        tools:layout="@layout/fragment_quran" />
+        tools:layout="@layout/fragment_quran" >
+        <action
+            android:id="@+id/action_quranFragment_to_suraDetailsFragment"
+            app:destination="@id/suraDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/suraDetailsFragment"
+        android:name="com.example.islamicapp.SuraDetailsFragment"
+        android:label="fragment_sura_details"
+        tools:layout="@layout/fragment_sura_details" >
+        <argument
+            android:name="position"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
 </navigation>
