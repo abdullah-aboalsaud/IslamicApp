@@ -18,10 +18,28 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        hideViews()
+
+        linkNavHostWithBottomNavigation()
+
+
+
+
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+
+        return true
+
+    }
+
+    private fun hideViews() {
         binding.bottomNavigation.visibility = View.GONE
         binding.appBar.visibility = View.GONE
+    }
 
-
+    private fun linkNavHostWithBottomNavigation() {
         val navController:NavController = findNavController(R.id.nav_host_fragment)
         binding.bottomNavigation.setupWithNavController(navController)
 

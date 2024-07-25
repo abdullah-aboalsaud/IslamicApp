@@ -8,12 +8,16 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.islamicapp.R
 import com.example.islamicapp.databinding.FragmentQuranBinding
+import com.example.islamicapp.utils.btnBack
+import com.example.islamicapp.utils.showAppBar
+import com.example.islamicapp.utils.showBottomNavigationView
 
 
 class QuranFragment : Fragment() {
     private var _binding : FragmentQuranBinding?=null
     private val binding get() = _binding!!
-    var surasList = listOf(
+
+    private var surasList = listOf(
         "الفاتحه",
         "البقرة",
         "آل عمران",
@@ -140,6 +144,9 @@ class QuranFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        showBottomNavigationView()
+        showAppBar()
+        btnBack()
         val adapter = SurasAdapter(surasList)
         adapter.onItemClickListener = SurasAdapter.OnItemClickListener { position, title ->
 

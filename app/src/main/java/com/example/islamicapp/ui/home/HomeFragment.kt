@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.example.islamicapp.MainActivity
 import com.example.islamicapp.R
 import com.example.islamicapp.databinding.FragmentHomeBinding
+import com.example.islamicapp.utils.btnBack
 import com.example.islamicapp.utils.hideBottomNavigationView
 import com.example.islamicapp.utils.showAppBar
 import com.example.islamicapp.utils.showBottomNavigationView
@@ -31,6 +32,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         showBottomNavigationView()
         showAppBar()
+        btnBack()
     }
 
 }

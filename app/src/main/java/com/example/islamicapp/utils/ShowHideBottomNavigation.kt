@@ -1,7 +1,9 @@
 package com.example.islamicapp.utils
 
 import android.view.View
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.islamicapp.MainActivity
 import com.example.islamicapp.R
 import com.google.android.material.appbar.AppBarLayout
@@ -21,4 +23,11 @@ fun Fragment.showBottomNavigationView() {
 
 fun Fragment.showAppBar() {
     (activity as MainActivity).findViewById<AppBarLayout>(R.id.app_bar).visibility = View.VISIBLE
+}
+
+fun Fragment.btnBack(){
+    (activity as MainActivity).findViewById<ImageView>(R.id.btn_back).setOnClickListener {
+        findNavController().navigateUp()
+    }
+
 }
