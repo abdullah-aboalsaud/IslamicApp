@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.islamicapp.R
 import com.example.islamicapp.databinding.FragmentQuranBinding
 import com.example.islamicapp.utils.btnBack
 import com.example.islamicapp.utils.showAppBar
@@ -144,14 +143,25 @@ class QuranFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         showBottomNavigationView()
         showAppBar()
         btnBack()
+
+        bindSurasToSurasAdapter()
+
+
+    }
+
+    private fun bindSurasToSurasAdapter() {
+
         val adapter = SurasAdapter(surasList)
+
         adapter.onItemClickListener = SurasAdapter.OnItemClickListener { position, title ->
 
             startSuraDetailsFragment(position,title)
         }
+
         binding.chaptersRecycler.adapter= adapter
 
     }

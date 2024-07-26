@@ -1,19 +1,14 @@
 package com.example.islamicapp.ui.home
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.islamicapp.MainActivity
-import com.example.islamicapp.R
+import androidx.fragment.app.Fragment
 import com.example.islamicapp.databinding.FragmentHomeBinding
 import com.example.islamicapp.utils.btnBack
-import com.example.islamicapp.utils.hideBottomNavigationView
 import com.example.islamicapp.utils.showAppBar
 import com.example.islamicapp.utils.showBottomNavigationView
-import com.google.android.material.appbar.AppBarLayout
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeFragment : Fragment() {
 
@@ -24,7 +19,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentHomeBinding.inflate(inflater)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 

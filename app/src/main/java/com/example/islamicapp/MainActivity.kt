@@ -4,9 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
-import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.example.islamicapp.databinding.ActivityMainBinding
 
@@ -24,8 +22,6 @@ class MainActivity : AppCompatActivity() {
         linkNavHostWithBottomNavigation()
 
 
-
-
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -38,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigation.visibility = View.GONE
         binding.appBar.visibility = View.GONE
     }
+
 
     private fun linkNavHostWithBottomNavigation() {
         val navController:NavController = findNavController(R.id.nav_host_fragment)
