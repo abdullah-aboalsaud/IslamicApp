@@ -17,11 +17,6 @@
             app:popUpTo="@id/nav_graph" />
     </fragment>
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.islamicapp.ui.home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
-    <fragment
         android:id="@+id/radioFragment"
         android:name="com.example.islamicapp.ui.radio.RadioFragment"
         android:label="fragment_radio"
@@ -30,7 +25,11 @@
         android:id="@+id/hadethFragment"
         android:name="com.example.islamicapp.ui.hadeth.HadethFragment"
         android:label="fragment_hadeth"
-        tools:layout="@layout/fragment_hadeth" />
+        tools:layout="@layout/fragment_hadeth">
+        <action
+            android:id="@+id/action_hadethFragment_to_hadethDetailsFragment"
+            app:destination="@id/hadethDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tasbehFragment"
         android:name="com.example.islamicapp.ui.tasbeh.TasbehFragment"
@@ -56,5 +55,14 @@
         <argument
             android:name="title"
             app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/hadethDetailsFragment"
+        android:name="com.example.islamicapp.ui.hadeth.HadethDetailsFragment"
+        android:label="fragment_hadeth_details"
+        tools:layout="@layout/fragment_hadeth_details">
+        <argument
+            android:name="hadeth"
+            app:argType="com.example.islamicapp.ui.hadeth.HadethModel" />
     </fragment>
 </navigation>

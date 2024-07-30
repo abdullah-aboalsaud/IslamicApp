@@ -29,14 +29,17 @@ class SurasAdapter(val chapters: List<String>) : Adapter<SurasAdapter.ChaptersVi
     override fun onBindViewHolder(holder: ChaptersViewHolder, position: Int) {
         val chapter = chapters[position]
         holder.bind(chapter)
+
         if (onItemClickListener!=null){
             holder.itemView.setOnClickListener {
                 onItemClickListener?.onItemClick(position,chapter)
             }
         }
+
     }
 
     fun interface OnItemClickListener {
         fun onItemClick(position: Int, title: String)
     }
+
 }

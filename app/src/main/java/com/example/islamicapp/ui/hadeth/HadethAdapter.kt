@@ -22,7 +22,19 @@ class HadethAdapter(val hadethList: List<HadethModel>) : Adapter<HadethAdapter.H
 
     override fun onBindViewHolder(holder: HadethViewHolder, position: Int) {
         holder.binding.tvHadethTitle.text = hadethList[position].title
+
+        if (onItemClickListener != null) {
+            holder.binding.root.setOnClickListener {
+                onItemClickListener?.onItemClick(position, hadethList[position])
+            }
+        }
+
     }
 
+    var onItemClickListener: OnItemClickListener? = null
+
+    fun interface OnItemClickListener {
+        fun onItemClick(position: Int, hadethModel: HadethModel)
+    }
 
 }

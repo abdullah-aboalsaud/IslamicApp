@@ -1,33 +1,38 @@
-package com.example.islamicapp.ui.tasbeh
+package com.example.islamicapp.ui.hadeth
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.islamicapp.databinding.FragmentTasbehBinding
-import com.example.islamicapp.utils.btnBack
+import androidx.navigation.fragment.navArgs
+import com.example.islamicapp.databinding.FragmentHadethDetailsBinding
 import com.example.islamicapp.utils.showAppBar
 
+class HadethDetailsFragment : Fragment() {
+    private var _binding: FragmentHadethDetailsBinding? = null
+    private val binding get() = _binding!!
 
-class TasbehFragment : Fragment() {
+    val args: HadethDetailsFragmentArgs by navArgs()
 
-    private var _binding: FragmentTasbehBinding? = null
-    val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentTasbehBinding.inflate(inflater, container, false)
-
+        _binding = FragmentHadethDetailsBinding.inflate(inflater, container, false)
         return binding.root
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         showAppBar()
-        btnBack()
+
+        binding.tvTitle.text = args.hadeth.title
+        binding.tvHadethContent.text = args.hadeth.content
+
+
     }
 
 

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.islamicapp.MainActivity
 import com.example.islamicapp.databinding.FragmentHadethBinding
 
@@ -51,7 +52,19 @@ class HadethFragment : Fragment() {
     }
 
     private fun bindHadethList(allHadethList: MutableList<HadethModel>) {
-        binding.hadethRecycler.adapter = HadethAdapter(allHadethList)
+        val adapter = HadethAdapter(allHadethList)
+        adapter.onItemClickListener = HadethAdapter.OnItemClickListener { position, hadethModel ->
+            startHadethDetailsFragment(hadethModel)
+        }
+        binding.hadethRecycler.adapter = adapter
+
+
+    }
+
+    private fun startHadethDetailsFragment(hadeth: HadethModel) {
+        findNavController().navigate(
+            HadethFragmentDirections.actionHadethFragmentToHadethDetailsFragment(hadeth)
+        )
     }
 
 

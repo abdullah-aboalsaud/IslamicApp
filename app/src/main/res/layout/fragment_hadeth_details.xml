@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:background="@drawable/main_background"
-    tools:context=".ui.suraDetails.SuraDetailsFragment">
+    android:background="@drawable/main_background"
+    tools:context=".ui.hadeth.HadethDetailsFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
@@ -28,44 +28,40 @@
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                tools:text="sura name"
-                android:textSize="20sp"
                 android:textColor="@color/black_text_color"
-                />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_play"
-               app:layout_constraintTop_toTopOf="@id/tv_title"
-                app:layout_constraintBottom_toBottomOf="@id/tv_title"
-                app:layout_constraintStart_toEndOf="@id/tv_title"
-                app:layout_constraintEnd_toEndOf="@id/seperator"
-                />
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="hadeth name" />
+
             <View
                 android:id="@+id/seperator"
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:background="?attr/colorPrimary"
-                app:layout_constraintTop_toBottomOf="@id/tv_title"
                 android:layout_marginTop="3dp"
-                app:layout_constraintWidth_percent=".7"
-                app:layout_constraintStart_toStartOf="parent"
+                android:background="?attr/colorPrimary"
                 app:layout_constraintEnd_toEndOf="parent"
-                />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                app:layout_constraintWidth_percent=".7" />
 
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/verses_recycler"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/seperator"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                />
+                tools:layout_editor_absoluteX="16dp">
+
+                <TextView
+                    android:id="@+id/tv_hadeth_content"
+                    style="@style/bodyRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    tools:text="@tools:sample/lorem/random" />
+
+            </ScrollView>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

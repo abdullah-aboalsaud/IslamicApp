@@ -21,14 +21,9 @@ class MainActivity : AppCompatActivity() {
 
         linkNavHostWithBottomNavigation()
 
-
     }
 
-    override fun onSupportNavigateUp(): Boolean {
 
-        return true
-
-    }
 
     private fun hideViews() {
         binding.bottomNavigation.visibility = View.GONE
