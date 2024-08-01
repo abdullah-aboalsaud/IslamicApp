@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.islamicapp.databinding.FragmentTasbehBinding
-import com.example.islamicapp.utils.btnBack
+import com.example.islamicapp.utils.hideBtnBack
 import com.example.islamicapp.utils.showAppBar
 
 
@@ -29,7 +29,7 @@ class TasbehFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         showAppBar()
-        btnBack()
+        hideBtnBack()
 
         binding.ivSebhaBody.setOnClickListener {
             rotateImage()

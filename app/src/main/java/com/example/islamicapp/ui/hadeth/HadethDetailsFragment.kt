@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.example.islamicapp.databinding.FragmentHadethDetailsBinding
+import com.example.islamicapp.utils.btnBack
 import com.example.islamicapp.utils.showAppBar
+import com.example.islamicapp.utils.showBtnBack
 
 class HadethDetailsFragment : Fragment() {
     private var _binding: FragmentHadethDetailsBinding? = null
@@ -28,6 +30,8 @@ class HadethDetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         showAppBar()
+        showBtnBack()
+        btnBack()
 
         binding.tvTitle.text = args.hadeth.title
         binding.tvHadethContent.text = args.hadeth.content

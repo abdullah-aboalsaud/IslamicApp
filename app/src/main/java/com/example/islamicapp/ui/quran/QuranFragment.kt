@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.islamicapp.databinding.FragmentQuranBinding
-import com.example.islamicapp.utils.btnBack
+import com.example.islamicapp.utils.hideBtnBack
 import com.example.islamicapp.utils.showAppBar
 import com.example.islamicapp.utils.showBottomNavigationView
 
@@ -146,7 +146,7 @@ class QuranFragment : Fragment() {
 
         showBottomNavigationView()
         showAppBar()
-        btnBack()
+        hideBtnBack()
 
         bindSurasToSurasAdapter()
 

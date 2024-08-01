@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.islamicapp.MainActivity
 import com.example.islamicapp.databinding.FragmentHadethBinding
+import com.example.islamicapp.utils.hideBtnBack
 
 
 class HadethFragment : Fragment() {
@@ -24,7 +25,7 @@ class HadethFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        hideBtnBack()
         radHadethFile()
     }
 

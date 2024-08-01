@@ -1,16 +1,17 @@
 package com.example.islamicapp.ui.suraDetails
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.example.islamicapp.MainActivity
 import com.example.islamicapp.databinding.FragmentSuraDetailsBinding
 import com.example.islamicapp.utils.btnBack
 import com.example.islamicapp.utils.hideBottomNavigationView
 import com.example.islamicapp.utils.showAppBar
+import com.example.islamicapp.utils.showBtnBack
 
 
 class SuraDetailsFragment : Fragment() {
@@ -32,6 +33,7 @@ class SuraDetailsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         showAppBar()
         hideBottomNavigationView()
+        showBtnBack()
         btnBack()
 
         binding.tvTitle.text = args.title

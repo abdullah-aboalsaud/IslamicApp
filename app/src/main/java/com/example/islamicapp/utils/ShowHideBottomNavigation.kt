@@ -21,11 +21,21 @@ fun Fragment.showBottomNavigationView() {
     bottomNavigationView.visibility = View.VISIBLE
 }
 
+fun Fragment.hideBtnBack() {
+    (activity as MainActivity).findViewById<ImageView>(R.id.btn_back).visibility = View.GONE
+}
+
+fun Fragment.showBtnBack() {
+    (activity as MainActivity).findViewById<ImageView>(R.id.btn_back).visibility = View.VISIBLE
+}
+
+
+
 fun Fragment.showAppBar() {
     (activity as MainActivity).findViewById<AppBarLayout>(R.id.app_bar).visibility = View.VISIBLE
 }
 
-fun Fragment.btnBack(){
+fun Fragment.btnBack() {
     (activity as MainActivity).findViewById<ImageView>(R.id.btn_back).setOnClickListener {
         findNavController().navigateUp()
     }
