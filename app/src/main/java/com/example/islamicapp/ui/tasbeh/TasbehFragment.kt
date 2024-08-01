@@ -14,6 +14,8 @@ class TasbehFragment : Fragment() {
 
     private var _binding: FragmentTasbehBinding? = null
     val binding get() = _binding!!
+    var currentRotation = 0f
+    var tasbehCounter = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,6 +30,48 @@ class TasbehFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         showAppBar()
         btnBack()
+
+        binding.ivSebhaBody.setOnClickListener {
+            rotateImage()
+            increaseCountWithDoaa()
+        }
+
+    }
+
+    val doaaList = mutableListOf("alhamd llah", "la elah ela allah", "allah akbar", "sobhan allah")
+    var listCounter = 0
+
+    private fun increaseCountWithDoaa() {
+
+        if (tasbehCounter <= 33) {
+            binding.tvCounter.text = tasbehCounter.toString()
+            tasbehCounter++
+        } else {
+            tasbehCounter = 0
+
+            if (listCounter < doaaList.size) {
+                binding.tvDoaa.text = doaaList[listCounter]
+                listCounter++
+            } else {
+                listCounter = 0
+                binding.tvDoaa.text = doaaList[listCounter]
+            }
+
+        }
+
+
+    }
+
+    private fun rotateImage() {
+
+        // val rotation = AnimationUtils.loadAnimation(requireContext(),R.anim.rotate_animation)
+
+        currentRotation += 20f
+        binding.ivSebhaBody.animate()
+            .rotation(currentRotation)
+            .setDuration(500)
+            .start()
+
     }
 
 
