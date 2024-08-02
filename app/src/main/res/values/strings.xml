@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">IslamicApp</string>
-    <string name="islami">Islami</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name" translatable="false">IslamicApp</string>
+    <string name="islami" translatable="false">Islami</string>
+    <string name="number_of_tasbeh" translatable="false">Number of Tasbeh</string>
+    <string name="alhamd_llah" translatable="false">alhamd llah</string>
+    <string name="la_elah_ela_allah" translatable="false">la elah ela allah</string>
+    <string name="allah_akbar" translatable="false">allah akbar</string>
+    <string name="sobhan_allah" translatable="false">sobhan allah</string>
+    <string name="sebha" translatable="false">Sebha</string>
+    <string name="radio" translatable="false">Radio</string>
+    <string name="hadeth" translatable="false">Hadeth</string>
+    <string name="quran" translatable="false">Quran</string>
 </resources>

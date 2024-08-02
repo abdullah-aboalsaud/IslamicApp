@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+    <string name="app_name">اسلامي</string>
+    <string name="islami">اسلامي</string>
+    <string name="number_of_tasbeh">عدد التسبيحات</string>
+    <string name="alhamd_llah">الحمدلله</string>
+    <string name="la_elah_ela_allah">لا اله الا الله</string>
+    <string name="allah_akbar">الله اكبر</string>
+    <string name="sobhan_allah">سبحان الله</string>
+    <string name="sebha">التسبيح</string>
+    <string name="radio">الراديو</string>
+    <string name="hadeth">الأحاديث</string>
+    <string name="quran">القرآن</string>
 </resources>

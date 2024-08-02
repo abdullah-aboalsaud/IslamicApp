@@ -7,6 +7,7 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.islamicapp.databinding.ActivityMainBinding
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     private var _binding:ActivityMainBinding?=null
@@ -16,6 +17,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        val locale = Locale("ar")
+        Locale.setDefault(locale)
+        val config = resources.configuration
+        config.setLocale(locale)
+        resources.updateConfiguration(config, resources.displayMetrics)
+
 
         hideViews()
 

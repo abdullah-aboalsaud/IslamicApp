@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Number of Tasbeh"
+        android:text="@string/number_of_tasbeh"
         app:layout_constraintEnd_toEndOf="@id/iv_sebha_body"
         app:layout_constraintStart_toStartOf="@id/iv_sebha_body"
         app:layout_constraintTop_toBottomOf="@id/iv_sebha_body" />
@@ -62,7 +62,7 @@
         android:background="@drawable/phrases_chape"
         android:gravity="center"
         android:padding="10dp"
-        android:text="sobhan allah"
+        android:text="@string/sobhan_allah"
         android:textColor="@color/white"
         android:textSize="21sp"
         app:layout_constraintEnd_toEndOf="parent"
