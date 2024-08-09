@@ -11,4 +11,5 @@
     <string name="radio">الراديو</string>
     <string name="hadeth">الأحاديث</string>
     <string name="quran">القرآن</string>
+    <string name="sura_name">اسم السورة</string>
 </resources>

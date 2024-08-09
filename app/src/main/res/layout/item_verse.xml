@@ -13,11 +13,12 @@
         android:paddingVertical="8dp"
         android:textSize="20sp"
         android:textDirection="rtl"
+        android:textColor="@color/details_text"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="sorat el fatiha" />
+        tools:text="this is the verse (1)" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

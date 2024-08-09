@@ -10,4 +10,5 @@
     <string name="radio" translatable="false">Radio</string>
     <string name="hadeth" translatable="false">Hadeth</string>
     <string name="quran" translatable="false">Quran</string>
+    <string name="sura_name" translatable="false">sura name</string>
 </resources>

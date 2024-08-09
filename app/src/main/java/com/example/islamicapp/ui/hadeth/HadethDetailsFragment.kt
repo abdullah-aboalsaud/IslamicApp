@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.example.islamicapp.databinding.FragmentHadethDetailsBinding
 import com.example.islamicapp.utils.btnBack
+import com.example.islamicapp.utils.hideBottomNavigationView
 import com.example.islamicapp.utils.showAppBar
 import com.example.islamicapp.utils.showBtnBack
 
@@ -32,6 +33,7 @@ class HadethDetailsFragment : Fragment() {
         showAppBar()
         showBtnBack()
         btnBack()
+        hideBottomNavigationView()
 
         binding.tvTitle.text = args.hadeth.title
         binding.tvHadethContent.text = args.hadeth.content

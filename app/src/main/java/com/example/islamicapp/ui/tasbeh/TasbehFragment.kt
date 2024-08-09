@@ -15,6 +15,7 @@ class TasbehFragment : Fragment() {
 
     private var _binding: FragmentTasbehBinding? = null
     val binding get() = _binding!!
+
     private var doaaList = mutableListOf<String>()
     var currentRotation = 0f
     var tasbehCounter = 1

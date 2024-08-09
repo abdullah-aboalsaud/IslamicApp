@@ -10,20 +10,13 @@
         style="@style/titleRegular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingVertical="8dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/title_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="hadeth num1" />
 
-    <View
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:background="?attr/colorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_hadeth_title"
-        app:layout_constraintWidth_percent=".7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:background="@drawable/main_background"
     tools:context=".ui.tasbeh.TasbehFragment">
 
 
@@ -23,7 +24,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="-15dp"
+        android:layout_marginBottom="-17dp"
         android:src="@drawable/head_sebha"
         app:layout_constraintBottom_toTopOf="@id/iv_sebha_body"
         app:layout_constraintEnd_toEndOf="@id/iv_sebha_body"
@@ -37,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/number_of_tasbeh"
+        android:textColor="@color/title_text"
         app:layout_constraintEnd_toEndOf="@id/iv_sebha_body"
         app:layout_constraintStart_toStartOf="@id/iv_sebha_body"
         app:layout_constraintTop_toBottomOf="@id/iv_sebha_body" />
@@ -47,6 +49,7 @@
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/counter_chape"
+        android:textColor="@color/title_text"
         android:text="0"
         android:textSize="25sp"
         android:gravity="center"

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="doaa">#FACC1D</color>
+    <color name="counter">#151C32</color>
+    <color name="title_text">#FFFFFF</color>
+    <color name="details_text">#FACC1D</color>
+    <color name="separator">#FACC1D</color>
+    <color name="card_view">#161D33</color>
+</resources>

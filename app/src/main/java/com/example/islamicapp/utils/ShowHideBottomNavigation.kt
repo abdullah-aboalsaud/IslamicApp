@@ -30,7 +30,6 @@ fun Fragment.showBtnBack() {
 }
 
 
-
 fun Fragment.showAppBar() {
     (activity as MainActivity).findViewById<AppBarLayout>(R.id.app_bar).visibility = View.VISIBLE
 }

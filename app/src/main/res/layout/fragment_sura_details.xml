@@ -18,6 +18,7 @@
         app:layout_constraintHeight_percent=".9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/card_view"
         app:layout_constraintWidth_percent=".9">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -33,7 +34,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:text="sura name"
                 android:textSize="20sp"
-                android:textColor="@color/black_text_color"
+                android:textColor="@color/details_text"
                 />
             <ImageView
                 android:layout_width="wrap_content"
@@ -49,7 +50,7 @@
                 android:id="@+id/seperator"
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:background="?attr/colorPrimary"
+                android:background="@color/separator"
                 app:layout_constraintTop_toBottomOf="@id/tv_title"
                 android:layout_marginTop="3dp"
                 app:layout_constraintWidth_percent=".7"
@@ -66,6 +67,7 @@
                 app:layout_constraintTop_toBottomOf="@id/seperator"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_verse"
                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
