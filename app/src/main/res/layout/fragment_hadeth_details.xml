@@ -15,11 +15,11 @@
         app:contentPadding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/card_view"
         app:layout_constraintHeight_percent=".9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent=".9"
-
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout

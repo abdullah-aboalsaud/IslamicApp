@@ -12,4 +12,5 @@
     <string name="hadeth">الأحاديث</string>
     <string name="quran">القرآن</string>
     <string name="sura_name">اسم السورة</string>
+    <string name="quran_radio">إذاعة القران الكريم</string>
 </resources>

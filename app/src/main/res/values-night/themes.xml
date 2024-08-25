@@ -3,7 +3,9 @@
 
     <!-- Base application theme. -->
     <style name="Base.Theme.IslamicApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
+        <!-- to stop default splash screen   -->
+        <item name="android:windowIsTranslucent">true</item>
+
         <item name="colorPrimary">@color/basic_dark</item>
         <item name="colorPrimaryVariant">@color/basic_dark</item>
         <item name="colorOnPrimary">@color/white</item>

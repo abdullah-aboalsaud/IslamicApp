@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">IslamicApp</string>
+    <string name="app_name">IslamicApp</string>
     <string name="islami" translatable="false">Islami</string>
     <string name="number_of_tasbeh" translatable="false">Number of Tasbeh</string>
     <string name="alhamd_llah" translatable="false">alhamd llah</string>
@@ -11,4 +11,7 @@
     <string name="hadeth" translatable="false">Hadeth</string>
     <string name="quran" translatable="false">Quran</string>
     <string name="sura_name" translatable="false">sura name</string>
+    <string name="quran_radio" translatable="false">Quran Radio</string>
+    <string name="channel_name" translatable="false">radio channel</string>
+    <string name="channel_description" translatable="false">radio notifications</string>
 </resources>

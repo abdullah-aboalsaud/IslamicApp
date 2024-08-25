@@ -1,7 +1,10 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.IslamicApp" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <!-- Customize your light theme here. -->
+
+        <!-- to stop default splash screen   -->
+        <item name="android:windowIsTranslucent">true</item>
+
         <item name="colorPrimary">@color/gold</item>
         <item name="colorPrimaryVariant">@color/gold2</item>
         <item name="colorOnPrimary">@color/white</item>

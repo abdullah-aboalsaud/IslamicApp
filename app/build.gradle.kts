@@ -59,5 +59,4 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
 
 
-
 }
